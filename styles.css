@@ -45,3 +45,51 @@ a {
 #main-header nav a:active {
     color: rgb(228, 163, 44);
 }
+
+main h1 {
+    text-align: center;
+    color: rgb(238, 164, 80);
+    font-size: 48px;
+}
+
+.food-item img {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#latest-food {
+    width: 80%;
+    margin: 50px auto;
+}
+
+#latest-food ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 0;
+    margin: 0 ;
+}
+
+.food-item {
+    background-color: rgb(228, 206, 182);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.food-item-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.food-item-content a {
+    background-color: rgb(228, 157, 44);
+    color: white;
+    border-radius: 4px;
+    padding: 10px 24px;
+}
+
+.food-item-content a:hover,
+.food-item-content a:active {
+    background-color: rgb(221, 134, 34);
+}
