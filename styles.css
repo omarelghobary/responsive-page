@@ -24,6 +24,21 @@ a {
     color: rgb(238, 164, 80);
 }
 
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    display: none;
+}
+
+.menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white; 
+}
+
 #main-header ul {
     list-style: none;
     display: flex;
@@ -45,6 +60,46 @@ a {
 #main-header nav a:hover,
 #main-header nav a:active {
     color: rgb(228, 163, 44);
+}
+
+#side-drawer  {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 26, 27);
+    display: none;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+#side-drawer header {
+    display: flex;
+    height: 5rem;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-drawer ul li {
+    margin: 1rem 0;
+}
+
+#side-drawer ul a {
+    color: rgb(253, 239, 213);
+    font-size: 2rem;
 }
 
 main h1 {
@@ -85,7 +140,7 @@ main h1 {
 }
 
 .food-item-content a {
-    background-color: rgb(228, 157, 44);
+    background-color:  rgb(228, 157, 44);
     color: white;
     border-radius: 4px;
     padding: 0.5rem 1.5rem;
@@ -94,4 +149,25 @@ main h1 {
 .food-item-content a:hover,
 .food-item-content a:active {
     background-color: rgb(221, 134, 34);
+}
+
+@media (max-width: 48rem) {
+    #main-header nav {
+        display: none;
+    }
+    
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+
+    #latest-food ul {
+        grid-template-columns: 100%;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+
 }
